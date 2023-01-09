@@ -58,7 +58,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Apliacción para calcular salarios semanales de obreros.&lt;/p&gt;&lt;p&gt;Autor: Rodrigo Tufiño &amp;lt;&lt;a href=&quot;mailto:rtufino@ups.edu.ec&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;rtufino@ups.edu.ec&lt;/span&gt;&lt;/a&gt;&amp;gt;&lt;/p&gt;&lt;p&gt;Universidad Politécnica Salesiana&lt;br/&gt;Carrera de Computación&lt;br/&gt;Todos los derechos reservados (r) 2022&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Apliacción para calcular salarios semanales de obreros.&lt;/p&gt;&lt;p&gt;Autor: Rodrigo Tufiño &amp;lt;&lt;a href=&quot;mailto:rtufino@ups.edu.ec&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;rtufino@ups.edu.ec&lt;/span&gt;&lt;/a&gt;&amp;gt;&lt;/p&gt;&lt;p&gt;Editor: Mateo Montenegro&lt;/p&gt;&lt;p&gt;Universidad Politécnica Salesiana&lt;br/&gt;Carrera de Computación&lt;br/&gt;Todos los derechos reservados (r) 2023&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="textFormat">
     <enum>Qt::RichText</enum>

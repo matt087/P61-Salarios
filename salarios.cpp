@@ -121,6 +121,37 @@ void Salarios::on_actionGuardar_triggered()
 
 }
 
+void Salarios::on_actionAbrir_triggered()
+{
+    QMessageBox messageBox(this);
+    messageBox.addButton(tr("Guardar"), QMessageBox::AcceptRole);
+    messageBox.addButton(tr("No Guardar"), QMessageBox::RejectRole);
+    messageBox.setText("¿Desea guardar los cálculos realizados?");
+    int r = messageBox.exec();
+    if(r == QMessageBox::Accepted)
+        ui->outCalculos->clear();
+    QString salarios = QFileDialog::getOpenFileName(this,"Abrir", QDir::home().absolutePath(), "Archivos de texto (*.txt)");
+    QFile archivo(salarios);
+    int s = archivo.size();
+    if (s > 0)
+    {
+        QTextStream in(&archivo);
+        if(archivo.open(QFile::ReadOnly))
+        {
+            ui->outCalculos->appendPlainText(qPrintable(in.readAll()));
+        }
+        else
+        {
+            QMessageBox::warning(this, "Leer archivo", "No se puede acceder al archivo.");
+        }
+        ui->statusbar->showMessage("Se ha cargado el archivo correctamente.",3000);
+        archivo.close();
+    }
+    else
+    {
+        QMessageBox::warning(this, "Abrir Archivo", "No seleccionó ningún archivo.");
+    }
+}
 
 void Salarios::on_actionAcerca_de_triggered()
 {

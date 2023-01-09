@@ -6,9 +6,9 @@
 #include <QMessageBox>
 #include <QFileDialog>
 
-#include "obrero.h"
 #include "controlador.h"
 #include "acerca.h"
+#include "ui_acerca.h"
 
 #define VERSION "0.2"
 
@@ -34,6 +34,8 @@ private slots:
     void on_actionSalir_triggered();
 
     void on_actionGuardar_triggered();
+
+    void on_actionAbrir_triggered();
 
     void on_actionAcerca_de_triggered();
 
