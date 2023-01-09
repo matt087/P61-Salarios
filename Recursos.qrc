@@ -1,2 +1,11 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>Recursos/Iconos/archivar-factura.png</file>
+        <file>Recursos/Iconos/carpeta (1).png</file>
+        <file>Recursos/Iconos/disco.png</file>
+        <file>Recursos/Iconos/archivo-factura-dolar.png</file>
+        <file>Recursos/Iconos/informacion.png</file>
+        <file>Recursos/Iconos/rehacer.png</file>
+        <file>Recursos/Iconos/salarios.png</file>
+    </qresource>
+</RCC>

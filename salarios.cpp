@@ -97,8 +97,8 @@ void Salarios::on_actionGuardar_triggered()
     // Abrir un cuadro de diálogo para seleccionar el path y archivo a guardar
     QString nombreArchivo = QFileDialog::getSaveFileName(this,
                                                    "Guardar calculos de salarios",
-                                                   QDir::home().absolutePath() + "/salarios.txt",
-                                                   "Archivos de texto (*.txt)");
+                                                   QDir::home().absolutePath() + "/salarios.sal",
+                                                   "Archivos de salario (*.sal)");
     // Crear un objeto File
     QFile archivo(nombreArchivo);
     // Tartar de abrir para escritura
@@ -130,7 +130,7 @@ void Salarios::on_actionAbrir_triggered()
     int r = messageBox.exec();
     if(r == QMessageBox::Accepted)
         ui->outCalculos->clear();
-    QString salarios = QFileDialog::getOpenFileName(this,"Abrir", QDir::home().absolutePath(), "Archivos de texto (*.txt)");
+    QString salarios = QFileDialog::getOpenFileName(this,"Abrir", QDir::home().absolutePath(), "Archivos de salario (*.sal)");
     QFile archivo(salarios);
     int s = archivo.size();
     if (s > 0)

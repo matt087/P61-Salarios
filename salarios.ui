@@ -19,6 +19,10 @@
   <property name="windowTitle">
    <string>Salarios</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="Recursos.qrc">
+    <normaloff>:/Recursos/Iconos/salarios.png</normaloff>:/Recursos/Iconos/salarios.png</iconset>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
@@ -171,7 +175,7 @@
      <x>0</x>
      <y>0</y>
      <width>600</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuArchivo">
@@ -197,6 +201,10 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNuevo">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/archivar-factura.png</normaloff>:/Recursos/Iconos/archivar-factura.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Nuevo</string>
    </property>
@@ -205,14 +213,22 @@
    </property>
   </action>
   <action name="actionAbrir">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/carpeta (1).png</normaloff>:/Recursos/Iconos/carpeta (1).png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Abrir</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+A</string>
+    <string>Ctrl+O</string>
    </property>
   </action>
   <action name="actionGuardar">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/disco.png</normaloff>:/Recursos/Iconos/disco.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Guardar</string>
    </property>
@@ -221,6 +237,10 @@
    </property>
   </action>
   <action name="actionCalcular">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/archivo-factura-dolar.png</normaloff>:/Recursos/Iconos/archivo-factura-dolar.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Calcular</string>
    </property>
@@ -229,6 +249,10 @@
    </property>
   </action>
   <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/rehacer.png</normaloff>:/Recursos/Iconos/rehacer.png</iconset>
+   </property>
    <property name="text">
     <string>&amp;Salir</string>
    </property>
@@ -237,11 +261,20 @@
    </property>
   </action>
   <action name="actionAcerca_de">
+   <property name="icon">
+    <iconset resource="Recursos.qrc">
+     <normaloff>:/Recursos/Iconos/informacion.png</normaloff>:/Recursos/Iconos/informacion.png</iconset>
+   </property>
    <property name="text">
     <string>Acerca de Salarios</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="Recursos.qrc"/>
+ </resources>
  <connections/>
 </ui>
