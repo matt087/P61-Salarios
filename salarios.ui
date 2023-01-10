@@ -23,6 +23,9 @@
    <iconset resource="Recursos.qrc">
     <normaloff>:/Recursos/Iconos/salarios.png</normaloff>:/Recursos/Iconos/salarios.png</iconset>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 74, 108);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
     <item>
@@ -45,6 +48,9 @@
          <layout class="QFormLayout" name="formLayout">
           <item row="0" column="0">
            <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">font: 9pt &quot;Segoe UI&quot;;</string>
+            </property>
             <property name="text">
              <string>Nombre:</string>
             </property>
@@ -52,6 +58,10 @@
           </item>
           <item row="0" column="1">
            <widget class="QLineEdit" name="inNombre">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+            </property>
             <property name="placeholderText">
              <string>Ingrese el nombre</string>
             </property>
@@ -59,19 +69,30 @@
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_2">
+            <property name="styleSheet">
+             <string notr="true">font: 9pt &quot;Segoe UI&quot;;</string>
+            </property>
             <property name="text">
              <string>Horas:</string>
             </property>
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QSpinBox" name="inHoras"/>
+           <widget class="QSpinBox" name="inHoras">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(255, 255, 255);
+border-color: rgb(0, 0, 0);</string>
+            </property>
+           </widget>
           </item>
          </layout>
         </widget>
        </item>
        <item>
         <widget class="QGroupBox" name="groupBox">
+         <property name="styleSheet">
+          <string notr="true">font: 9pt &quot;Segoe UI&quot;;</string>
+         </property>
          <property name="title">
           <string>Jornada</string>
          </property>
@@ -121,6 +142,9 @@
           </item>
           <item>
            <widget class="QPushButton" name="btnCalcular">
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(33, 124, 204);</string>
+            </property>
             <property name="text">
              <string>&amp;Calcular</string>
             </property>
@@ -156,6 +180,10 @@
       <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
         <widget class="QPlainTextEdit" name="outCalculos">
+         <property name="styleSheet">
+          <string notr="true">
+background-color: rgb(34, 154, 190);</string>
+         </property>
          <property name="readOnly">
           <bool>true</bool>
          </property>
